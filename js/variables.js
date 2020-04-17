@@ -12,8 +12,13 @@ let empMarks = 100;
     let subject = "js"
     console.table({name:empName,marks:empMarks,subject :subject})
 }
+
+// here subject will be global
 console.table({name:empName,marks:empMarks,subject :subject})
 
-const arr= [1,2,3,4,5,6,7,8]
-arr.push(9)
-console.log(arr)
+{
+    const arr= [1,2,3,false,"param",null]
+    console.log(arr)
+    
+    console.log("type of array is - " + typeof(arr))
+}
